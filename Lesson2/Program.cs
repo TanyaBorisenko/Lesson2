@@ -1,5 +1,4 @@
-﻿using System;
-using Lesson2.Sort;
+﻿using Lesson2.Sort;
 
 namespace Lesson2
 {
@@ -13,13 +12,13 @@ namespace Lesson2
             var candidates = userFactory.GetEntity<Candidate>().Generate(Randomizer.GetRandomNumber(12));
 
             IReportGenerator candidateReport = new CandidateReportGenerator();
-            IReportGenerator employyeReport = new EmployeeReportGenerator();
+            IReportGenerator employeeReport = new EmployeeReportGenerator();
 
             candidateReport.SortUsers(ref candidates);
-            employyeReport.SortUsers(ref employees);
+            employeeReport.SortUsers(ref employees);
 
-            employees.ForEach(x => Console.WriteLine(x));
-            candidates.ForEach(y => Console.WriteLine(y));
+            employees.ForEach(e => e.GetUserData());
+            candidates.ForEach(c => c.GetUserData());
         }
     }
 }

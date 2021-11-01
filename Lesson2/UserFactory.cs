@@ -45,7 +45,7 @@ namespace Lesson2
                     .RuleFor(u => u.CompanyCountry, f => f.Address.Country())
                     .RuleFor(u => u.CompanyCity, f => f.Address.City())
                     .RuleFor(u => u.CompanyAddress, f => f.Address.StreetAddress());
-                
+
                 entity = (Faker<T>) Convert.ChangeType(employee, typeof(Faker<T>));
             }
             else if (typeof(T) == typeof(Candidate))
@@ -58,7 +58,7 @@ namespace Lesson2
                     .RuleFor(u => u.JobDescription, f => f.Name.JobDescriptor())
                     .RuleFor(u => u.JobSalary, f => f.Random.Int(25, 45000))
                     .RuleFor(n => n.DismissalReason, f => f.PickRandom<DismissalReason>());
-                
+
                 entity = (Faker<T>) Convert.ChangeType(candidate, typeof(Faker<T>));
             }
 
