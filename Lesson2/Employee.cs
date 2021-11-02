@@ -4,12 +4,6 @@ namespace Lesson2
 {
     public class Employee : User
     {
-        public string Company;
-        public string CompanyName;
-        public string CompanyCountry;
-        public string CompanyCity;
-        public string CompanyAddress;
-
         public Employee()
         {
         }
@@ -26,11 +20,17 @@ namespace Lesson2
             CompanyAddress = companyAddress;
         }
 
+        public string Company;
+        public string CompanyName;
+        public string CompanyCountry;
+        public string CompanyCity;
+        public string CompanyAddress;
+
         public override void GetUserData()
         {
             base.GetUserData();
             Console.WriteLine(
-                $"Hello, I am {FullName}, {JodTitle} in {Company} {CompanyName} ({CompanyCountry}, {CompanyCity}, {CompanyAddress}) " +
+                $"{JodTitle} in {Company} {CompanyName} ({CompanyCountry}, {CompanyCity}, {CompanyAddress}) " +
                 $"and my salary {JobSalary}.");
         }
     }

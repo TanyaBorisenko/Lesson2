@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Lesson2.Sort
+namespace Lesson2.Generator
 {
     public interface IReportGenerator
     {

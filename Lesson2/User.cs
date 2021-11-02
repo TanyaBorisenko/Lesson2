@@ -5,13 +5,6 @@ namespace Lesson2
 {
     public abstract class User : IDisplayable
     {
-        public Guid Id;
-        public string FirstName;
-        public string LastName;
-        public string JodTitle;
-        public string JobDescription;
-        public double JobSalary;
-
         public string FullName => $"{FirstName} {LastName}";
 
         public User()
@@ -29,10 +22,17 @@ namespace Lesson2
             JobSalary = jobSalary;
         }
 
+        public Guid Id;
+        public string FirstName;
+        public string LastName;
+        public string JodTitle;
+        public string JobDescription;
+        public double JobSalary;
+
         public virtual void GetUserData()
         {
             Console.WriteLine(
-                $"Hello, I am {FullName}. I want to be a {JodTitle} ({JobDescription}) with a salary from {JobSalary}");
+                $"Hello, I am {FullName} ({Id})");
         }
     }
 }

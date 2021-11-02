@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Lesson2.Sort
+namespace Lesson2.Generator
 {
     public class CandidateReportGenerator : IReportGenerator
     {

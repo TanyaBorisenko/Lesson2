@@ -1,4 +1,4 @@
-﻿using Lesson2.Sort;
+﻿using Lesson2.Generator;
 
 namespace Lesson2
 {
