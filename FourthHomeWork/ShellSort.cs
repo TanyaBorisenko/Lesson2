@@ -4,7 +4,11 @@ namespace FourthHomeWork
 {
     public class ShellSort : ISorting
     {
+
         public void Sort()
+
+        void ISorting.Sort()
+
         {
             int[] number = {23, 65, 7, 789, -45, 34, 8, -12, -67, 43};
             int j;

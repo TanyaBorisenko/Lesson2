@@ -4,7 +4,11 @@ namespace FourthHomeWork
 {
     public class BubbleSort : ISorting
     {
+
         public void Sort()
+
+        void ISorting.Sort()
+
         {
             string[] words = {"words", "mother", "class", "cat"};
             string temp;
