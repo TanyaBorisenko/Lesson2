@@ -68,5 +68,6 @@
         //     Console.WriteLine($"Last person is number {linkedList.ElementAt(0)}.");
         // }
         //4.
+        //
     }
 }
