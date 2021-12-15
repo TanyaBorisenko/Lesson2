@@ -4,9 +4,6 @@ namespace FourthHomeWork
 {
     public class BubbleSort : ISorting
     {
-
-        public void Sort()
-
         void ISorting.Sort()
 
         {
